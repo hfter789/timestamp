@@ -4,7 +4,10 @@ var MONTH = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'Au
 var BASE_YEAR = 1900;
 
 app.get('/', function (req, res) {
-  res.send('Hello World');
+    res.send({
+    unix: null,
+    natural: null
+  });
 });
 
 app.get('/:timestamp', function (req, res, next) {
